@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+      
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/OFB</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+    
+        <mapping class="rw.ofbmrs.entities.Cell"/>
+        <mapping class="rw.ofbmrs.entities.ExchangeRate"/>
+        <mapping class="rw.ofbmrs.entities.District"/>
+        <mapping class="rw.ofbmrs.entities.ForeignCurrency"/>
+        <mapping class="rw.ofbmrs.entities.ForexBureau"/>
+        <mapping class="rw.ofbmrs.entities.Manager"/>
+        <mapping class="rw.ofbmrs.entities.Province"/>
+        <mapping class="rw.ofbmrs.entities.Sector"/>
+        <mapping class="rw.ofbmrs.entities.Teller"/>
+        <mapping class="rw.ofbmrs.entities.Transaction"/>
+        <mapping class="rw.ofbmrs.entities.Administrator"/>
+        <mapping class="rw.ofbmrs.entities.User"/>
+        <mapping class="rw.ofbmrs.entities.Client"/>
+        <mapping class="rw.ofbmrs.entities.Purchase"/>
+        <mapping class="rw.ofbmrs.entities.Sale"/>
+        <mapping class="rw.ofbmrs.entities.BnrEmployee"/>
+        
+    </session-factory>
+</hibernate-configuration>
